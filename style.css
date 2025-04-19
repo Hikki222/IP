@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body {
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(94, 94, 94);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    position: fixed;
+    color: azure;
+    width: 100%;
+    padding: 10px 10px;
+    top: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img {
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.icon-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.icon-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.icon-buttons img {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 30px;
+}
+main {
+        padding: 20px; 
+        background-color: rgba(255, 255, 255, 0.8); 
+        background-image: url('https://i.playground.ru/e/MHQdN7iQAZs1TBPb0ApmGg.png');
+        background-size: cover; 
+        background-position: center; 
+        min-height: 100vh; 
+        margin-top: 80px;
+}
