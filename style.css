@@ -90,3 +90,10 @@ main {
         min-height: 100vh; 
         margin-top: 80px;
 }
+.info img{
+    display: flex;
+    position: relative;
+    top: 250px;
+    margin-left: 500px;
+    width: 600px;
+}
