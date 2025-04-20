@@ -90,10 +90,36 @@ main {
         min-height: 100vh; 
         margin-top: 80px;
 }
-.info img{
+.info{
     display: flex;
+    background-image: url("https://avatars.dzeninfra.ru/get-zen_doc/5257032/pub_61938a3c0990350cadce2b02_61938cb24c89d861ff4cf2f1/scale_1200");
+    background-position: center;
     position: relative;
+    background-size: cover;
     top: 250px;
     margin-left: 500px;
-    width: 600px;
+    width: 800px;
+    height: 500px;
+    border: 5px solid white;
 }
+
+.lor h3{
+    color: white;
+    margin: 10px;
+    margin-right: 50px;
+    margin-bottom: 290px;
+    padding: 10px;
+    border: 5px solid white;
+}
+
+.continue{
+    position: relative;
+    color: white;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    margin-left: 520px;
+    margin-right: 530px;
+    margin-top: -15px;
+    /* border: 2px solid white; */
+}
+
