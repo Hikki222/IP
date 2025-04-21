@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Oswald:wght@200..700&family=Play:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
     margin: 0px;
     font-family: 'Inter', sans-serif;
@@ -9,7 +10,7 @@ body {
 
 header {
     background-color: #333;
-    position: fixed;
+    position: sticky;
     color: azure;
     width: 100%;
     padding: 10px 10px;
@@ -93,7 +94,7 @@ main {
 }
 .info{
     display: flex;
-    font-family: 'Inter', cursive;
+    font-family: 'Nunito';
     background-image: url("https://avatars.dzeninfra.ru/get-zen_doc/5257032/pub_61938a3c0990350cadce2b02_61938cb24c89d861ff4cf2f1/scale_1200");
     background-position: center;
     position: relative;
@@ -102,27 +103,61 @@ main {
     margin-left: 500px;
     width: 800px;
     height: 500px;
-    border: 5px solid white;
+    border: 5px solid #942300;
+    border-style: inset;
 }
 
 .lor h3{
     color: white;
     margin: 10px;
-    margin-right: 50px;
+    margin-right: 180px;
     margin-bottom: 290px;
     padding: 10px;
-    border: 5px solid white;
+    padding-top: 35px;
 }
 
 .continue{
-    font-family: 'Inter:ital', sans-serif;
+    font-family: 'Nunito';
     position: relative;
     color: white;
     padding-right: 15px;
     padding-bottom: 0px;
     margin-left: 520px;
     margin-right: 530px;
-    margin-top: -15px;
-    /* border: 2px solid white; */
+    margin-top: 5px;
 }
 
+.Prod{
+    display: flex;
+    position: relative;
+    top: 120px;
+    width: 1200px;
+    margin-left: 320px;
+    justify-content: center;
+    color: white;
+    border: 2px solid white;
+}
+
+.product_1{
+    display: flex;
+    position: relative;
+    background-image: url("https://cdn1.ozone.ru/s3/multimedia-r/6898388967.jpg");
+    margin-top: 200px;
+    margin-left: 47%;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+}
+
+.product_1 h3{
+    padding-top: 65%;
+    padding-left: 25%;
+}
+
+@media (max-width: 768px) {
+    body {
+        max-width: 100%;
+        height: auto;
+    }    
+}
