@@ -80,15 +80,52 @@ nav ul li a:hover {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: -30px;
+}
+.icon-button:hover {
+    background-color: #777;
 }
 
 .icon-buttons img {
     width: 20px;
     height: 20px;
-    margin: 0px;
-    margin-right: 30px;
+    padding: 40px;
+    margin-right: -10px;
 }
+
+.settings-button {
+    background-color: #333;
+    color: white;
+    width: auto;
+    border: none;
+    margin-right: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.settings-button img {
+    width: 25px;
+
+}
+.settings-button:hover {
+    background-color: #777;
+}
+
+.burger-menu_button {
+    position: fixed;
+    z-index: 5;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .burger-menu img{
+    width: -500px;
+    height: 20px;
+    margin: 80px;
+  }
+
 main {
         padding: 20px; 
         background-color: rgba(255, 255, 255, 0.8); 
@@ -263,9 +300,223 @@ main {
     text-align: center;
     box-sizing: border-box;
 }
+
+
+/* MEDIA */
+
+@media (max-width:992px){
+    .menu{
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: aqua;
+    }
+    
+    .menu menu-list {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    .info {
+        width: 700px;
+        margin-left: 250px;
+        height: 450px;
+    }
+    
+    .lor h3 {
+        margin-right: 100px;
+    }
+    
+    .continue {
+        margin-left: 270px;
+        margin-right: 270px;
+    }
+    
+    .Prod {
+        width: 900px;
+        left: 50px;
+    }
+    
+    .product_1, .product_2, .product_3 {
+        width: 200px;
+        height: 180px;
+    }
+    
+    .product_2 {
+        left: 30%;
+    }
+    
+    .product_3 {
+        left: 70%;
+    }
+}
+
+@media (max-width: 992px) {
+    .info {
+        width: 600px;
+        margin-left: 150px;
+        height: 400px;
+    }
+    
+    .lor h3 {
+        font-size: 14px;
+        margin-right: 50px;
+    }
+    
+    .continue {
+        margin-left: 170px;
+        margin-right: 170px;
+        font-size: 14px;
+    }
+    
+    .Prod {
+        width: 700px;
+        left: 50px;
+    }
+    
+    .product_1, .product_2, .product_3 {
+        width: 180px;
+        height: 160px;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         max-width: 100%;
         height: auto;
-    }    
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 5px 10px;
+    }
+    
+    .logo-img {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .icon-buttons {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .info {
+        width: 90%;
+        margin-left: 5%;
+        height: 350px;
+        top: 150px;
+    }
+    
+    .lor h3 {
+        font-size: 12px;
+        margin-right: 20px;
+        margin-bottom: 250px;
+    }
+    
+    .continue {
+        margin: 20px 5%;
+        font-size: 12px;
+    }
+    
+    .Prod {
+        width: 90%;
+        left: 5%;
+        top: 80px;
+    }
+    
+    .product_1, .product_2, .product_3 {
+        width: 150px;
+        height: 140px;
+        margin-top: 150px;
+    }
+    
+    .product_2 {
+        left: 30%;
+    }
+    
+    .product_3 {
+        left: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul li {
+        margin: 3px 5px;
+        font-size: 14px;
+    }
+    
+    .info {
+        height: 300px;
+        top: 120px;
+    }
+    
+    .lor h3 {
+        font-size: 10px;
+        margin-bottom: 220px;
+    }
+    
+    .continue {
+        font-size: 10px;
+    }
+    
+    .product_1, .product_2, .product_3 {
+        width: 120px;
+        height: 110px;
+        margin-top: 120px;
+    }
+    
+    .product_1 button, 
+    .product_2 button, 
+    .product_3 button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+    
+    .footer nav ul {
+        flex-direction: column;
+    }
+    
+    .footer nav ul li {
+        margin: 3px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .info {
+        height: 250px;
+    }
+    
+    .lor h3 {
+        font-size: 9px;
+        margin-bottom: 180px;
+    }
+    
+    .product_1, .product_2, .product_3 {
+        width: 100px;
+        height: 90px;
+        margin-top: 100px;
+    }
+    
+    .product_1 button, 
+    .product_2 button, 
+    .product_3 button {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
 }
